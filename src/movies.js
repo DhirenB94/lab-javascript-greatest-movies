@@ -56,48 +56,13 @@ const ratesAverage = (array) => {
 
 
 // Iteration 4: Drama movies - Get the average of Drama Movies
-let movies = [
-    {
-      "title": "The Shawshank Redemption",
-      "year": 1994,
-      "director": "Frank Darabont",
-      "duration": "2h 22min",
-      "genre": [
-        "Crime",
-        "Drama"
-      ],
-      "rate": 9.3
-    },
-    {
-      "title": "The Godfather",
-      "year": 1972,
-      "director": "Francis Ford Coppola",
-      "duration": "2h 55min",
-      "genre": [
-        "Crime",
-        "Drama"
-      ],
-      "rate": 9.1
-    },
-    {
-      "title": "The Godfather: Part II",
-      "year": 1974,
-      "director": "Francis Ford Coppola",
-      "duration": "3h 22min",
-      "genre": [
-        "Crime",
-        "Action"
-      ],
-      "rate": 9
-    }]
-
     const dramaMoviesRate = (array) => {
         const drama = array.filter((movie => {
         return movie.genre.includes("Drama") //godfather, shawshank
     })) 
     return ratesAverage(drama);
     }
-    console.log(dramaMoviesRate(movies))
+    
 
  
 // Iteration 5: Ordering by year - Order by year, ascending (in growing order)
@@ -107,6 +72,10 @@ let movies = [
 // BONUS - Iteration 7: Time Format - Turn duration of the movies from hours to minutes
 
 // BONUS - Iteration 8: Best yearly rate average - Best yearly rate average
+
+
+
+
 
 
 
